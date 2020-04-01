@@ -8,16 +8,8 @@
 <link rel="shortcut icon" href="images/Saimaa_clutch_online-thumb.png" type="image/png">
 <link href="https://fonts.googleapis.com/css?family=Big Shoulders Text" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<link href="css/clutch.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- Main Container -->
@@ -26,11 +18,13 @@
   <header> <a href="index.html">
     <h4 class="logo">CLUTCH</h4>
     </a>
-    <nav>
+    <nav class="nav" id="nav">
       <ul>
         <li><a href="#video">VIDEOT</a></li>
 		<li><a href="#about">INFO</a></li>
-        <li> <a href="#some">SOME</a></li>
+        <li><a href="#some">SOME</a></li>
+		<li><a href="javascript:void(0);" class="icon" onclick="showNav()">
+			<i class="fa fa-bars"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -120,6 +114,17 @@
   <!-- Copyrights Section -->
   <div class="copyright"><a href="https://trailblazers.gg">&copy;2020- <strong>Powered by Trailblazers </strong><img src="images/tbz-bw.png" width="20" height="20" alt=""></a></div>
 </div>
+<!-- Script for responsive navbar -->
+<script>
+function showNav() {
+  let x = document.getElementById("nav");
+  if (x.className === "nav") {
+    x.className += "responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
 <!-- Main Container Ends -->
 </body>
 </html>
