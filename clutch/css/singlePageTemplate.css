@@ -197,10 +197,27 @@ a {
 	display: inline-block;
 }
 .info_column {
-	width: 33%;
+	width: 50%;
 	text-align: center;
 	padding-top: 30px;
 	float: left;
+}
+#featured {
+	width: 100%;
+}
+#featured .cards {
+	width: 90%;
+	height: auto;
+}
+
+.cards {
+	width: 400px;
+	height: 225px;
+}
+.cards iframe {
+	width: 100%;
+	height: 100%;
+	padding: 0 25%;
 }
 .info .info_column h3 {
 	color: #f79f21;
@@ -209,6 +226,11 @@ a {
 .info .info_column p{
 	color: #717070;
 	background-color: #FFFFFF;
+	padding: 0 30px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin: 0 20px;
 }
 .about {
 	width: 100%;
@@ -230,23 +252,13 @@ a {
 	color: #f79f21;
 	text-align: center;
 }
-.cards {
-	width: 400px;
-	height: 200px;
-}
-.cards iframe {
-	width: 400px;
-	height: 200px;
-	align-self: center;
-}
-.info .info_column p {
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
+.about .text_column p{
+	color: #717070;
+	background-color: #FFFFFF;
+	padding: 0 30px;
 	line-height: 25px;
 	font-weight: lighter;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 0 20px;
 }
 .button {
 	width: 200px;
@@ -297,7 +309,7 @@ a {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 777px) {
 	body {
 		max-width: 100%;
 	}
@@ -331,9 +343,12 @@ nav ul li {
 	width: 100%;
 	margin: 0;
 }
+.info .info_column p {
+	padding: 0 10px;
+}
 .about .text_column {
-	width: 90%;
-	text-align: justify;
+	width: 100%;
+	margin: 0;
 }
 .parallax {
 	text-align: center;
@@ -383,14 +398,7 @@ nav ul li {
 }
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
-.about .text_column {
-	width: 90%;
-}
-}
-
-/* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
+@media (min-width: 778px) and (max-width: 900px) {
 .info .info_column {
 	width: 100%;
 }
@@ -404,6 +412,32 @@ nav ul li {
 	margin-top: 0px;
 	padding-top: 0px;
 }
-.cards{
+.cards iframe{
+	padding: 0 30%;
+}
+}
+
+/* Small Desktops */
+@media (min-width: 900px) and (max-width: 1096px) {
+.info .info_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 50%;
+}
+.about .text_column {
+	width: 90%;
+}
+.banner {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.cards iframe{
+	padding: 0 50%;
+}
+}
+@media (min-width: 1096px) and (max-width: 1300px) {
+.cards iframe {
+	padding: 0 15%;
 }
 }
