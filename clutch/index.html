@@ -9,22 +9,19 @@
 <link href="https://fonts.googleapis.com/css?family=Big Shoulders Text" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="css/clutch.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src = "js/clutch.js"></script>
 </head>
-<body>
+<body onload="date()">
 <!-- Main Container -->
 <div class="container"> 
   <!-- Navigation -->
-  <header> <a href="index.html">
-    <h4 class="logo">CLUTCH</h4>
-    </a>
-    <nav class="nav" id="nav">
+  <header>
+    <nav>
+		<a href="#container" class="logo" id="dateDiff">CLUTCH</a>
       <ul>
         <li><a href="#video">VIDEOT</a></li>
 		<li><a href="#about">INFO</a></li>
         <li><a href="#some">SOME</a></li>
-		<li><a href="javascript:void(0);" class="icon" onclick="showNav()">
-			<i class="fa fa-bars"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -74,7 +71,7 @@
     </article>
 	<article class="info_column">
       <h3>MITEN</h3>
-		<video class="cards" controls autoplay loop>
+		<video class="cards" controls autoplay loop muted>
 		  <source src="images/kanat.mp4" type="video/mp4">
 		  Selaimesi ei tue videon toistoa :/</video>
       <p>Keväinen pelikarnevaali siirtyy kauppakeskuksesta verkkoon. Pääkanavana toimii TrailblazersGG ja vielä ennen tapahtumaa löydät sieltä CSGO Spring Seriesin karsinta ottelut. Kanavamme lisäksi myös Mystiksen, Maerikaroliinan ja Mintuwiin kanavat ovat käytössämme, joten muistathan laittaa kaikki seurantaan!</p>
@@ -114,17 +111,6 @@
   <!-- Copyrights Section -->
   <div class="copyright"><a href="https://trailblazers.gg">&copy;2020- <strong>Powered by Trailblazers </strong><img src="images/tbz-bw.png" width="20" height="20" alt=""></a></div>
 </div>
-<!-- Script for responsive navbar -->
-<script>
-function showNav() {
-  let x = document.getElementById("nav");
-  if (x.className === "nav") {
-    x.className += "responsive";
-  } else {
-    x.className = "nav";
-  }
-}
-</script>
 <!-- Main Container Ends -->
 </body>
 </html>
