@@ -3,6 +3,7 @@
 body {
 	font-family: 'Big Shoulders Text';
 	background-image: url("../images/Saimaa_clutch_taustakuvio.jpg");
+	width: 100%;
 	font-size: 22px;
 	background-repeat: repeat;
 	margin-top: 0px;
@@ -342,7 +343,7 @@ nav ul li {
 	text-align: center;
 }
 .banner {
-	background-color: #2D9AB7;
+	background-color: #f79f21;
 	background-image: none;
 }
 .tagline {
@@ -366,7 +367,7 @@ nav ul li {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	color: #043745;
+	color: #f79f21;
 }
 .container header nav {
 	margin-top: 0px;
@@ -377,7 +378,7 @@ nav ul li {
 	float: none;
 	overflow: auto;
 	display: inline-block;
-	background: #52bad5;
+	background: #f79f21;
 }
 header nav ul {
 	padding: 0px;
