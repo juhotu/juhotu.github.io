@@ -310,18 +310,12 @@ a {
 
 /* Mobile */
 @media (max-width: 777px) {
-	body {
-		max-width: 100%;
-	}
 .logo {
 	width: 100%;
 	text-align: center;
 }
 .container header nav {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
+	margin: 0;
 	width: 100%;
 	float: none;
 	display: none;
@@ -329,10 +323,7 @@ a {
 header nav ul {
 }
 nav ul li {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
+	margin: 0;
 	width: 100%;
 	text-align: center;
 }
@@ -347,7 +338,7 @@ nav ul li {
 	padding: 0 10px;
 }
 .about .text_column {
-	width: 100%;
+	width: 90%;
 	margin: 0;
 }
 .parallax {
@@ -377,10 +368,14 @@ nav ul li {
 	text-align: center;
 }
 .cards {
+	padding: 0 10px;
 	width: 80%;
+	height: auto;
 }
 .cards iframe {
+	padding: 0 10px;
 	width: 80%;
+	height: auto;
 }
 .banner {
 	background-color: #f79f21;
