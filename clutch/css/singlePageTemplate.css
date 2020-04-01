@@ -72,6 +72,10 @@ ul li:hover a {
 	margin-left: 0px;
 	letter-spacing: 4px;
 }
+a {
+	color: #f79f21;
+	text-decoration: none;
+}
 /* Hero Section */
 .hero {
 	background-color: #0d0d0d;
@@ -156,7 +160,7 @@ ul li:hover a {
 }
 /* Parallax Section */
 .banner {
-	background-color: #2D9AB7;
+	background-color: #f79f21;
 	background-image: url("../images/SaimaaTrail.png");
 	height: 400px;
 	background-attachment: fixed;
@@ -189,9 +193,10 @@ ul li:hover a {
 	background-color: #FFFFFF;
 	padding-bottom: 35px;
 	width: 100%;
+	margin: 10px 0;
 }
 .info_column {
-	width: 50%;
+	width: 33%;
 	text-align: center;
 	padding-top: 30px;
 	float: left;
@@ -200,9 +205,29 @@ ul li:hover a {
 	color: #f79f21;
 	text-align: center;
 }
-.info .info_column p {
+.info .info_column p{
 	color: #717070;
 	background-color: #FFFFFF;
+}
+.about {
+	width: 100%;
+	padding: 10px 0 30px 0;
+	margin: 5px 0;
+}
+.about .text_column{
+	width: 45%;
+	text-aling: center;
+	padding-top: 30px;
+	float: left;
+}
+.about h2 {
+	font-size: 36px;
+	color: #717070;
+	text-align: center;
+}
+.about .text_column h3 {
+	color: #f79f21;
+	text-align: center;
 }
 .cards {
 	width: 400px;
