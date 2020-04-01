@@ -3,7 +3,7 @@
 body {
 	font-family: 'Big Shoulders Text';
 	background-image: url("../images/Saimaa_clutch_taustakuvio.jpg");
-	width: 100%;
+	background-size: auto;
 	font-size: 22px;
 	background-repeat: repeat;
 	margin-top: 0px;
@@ -209,7 +209,13 @@ footer .footer_column p {
 	max-width: 400px;
 	max-height: 200px;
 }
+.cards video {
+	width: 400px;
+	height: 200px;
+}
 .cards iframe {
+	width: 400px;
+	height: 200px;
 	padding: 0 30%;
 }
 footer .footer_column p {
@@ -273,14 +279,13 @@ footer {
 }
 
 /* Mobile */
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+	body {
+		max-width: 100%;
+	}
 .logo {
 	width: 100%;
 	text-align: center;
-	margin-top: 13px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
 }
 .container header nav {
 	margin-top: 0px;
@@ -304,10 +309,7 @@ nav ul li {
 .text_column {
 	width: 100%;
 	text-align: justify;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
+	padding: 0;
 }
 .thumbnail {
 	width: 100%;
@@ -341,6 +343,14 @@ nav ul li {
 	margin-left: 12px;
 	float: none;
 	text-align: center;
+}
+.cards video {
+	width: 80%;
+}
+.cards iframe {
+	width: 80%;
+	padding: 0;
+	margin: 0;
 }
 .banner {
 	background-color: #f79f21;
