@@ -28,7 +28,7 @@ header {
 .logo {
 	color: #fff;
 	text-align: left;
-	width: 30%;
+	width: 50%;
 	letter-spacing: 4px;
 	text-decoration: none;
 	float: left;
@@ -45,7 +45,6 @@ nav ul {
 nav ul li {
 	float: left;
 	color: #FFFFFF;
-	text-align: left;
 	margin-right: 25px;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -310,19 +309,13 @@ nav {
 	overflow: hidden
 }
 nav a {
-	float: left;
 	display: block;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
 }
 .logo {
 	color: #fff;
-	text-align: undefined;
-	width: 10%;
-	float: left;
-	margin-top: 15px;
-	margin-left: 25px;
+	width: 100%;
 	letter-spacing: 4px;
 }
 .hero {
@@ -424,8 +417,8 @@ nav a {
 	width: 90%;
 }
 .banner {
-	margin-top: 0px;
-	padding-top: 0px;
+	margin-top: 0;
+	padding-top: 0;
 }
 .cards iframe{
 	padding: 0 50%;
