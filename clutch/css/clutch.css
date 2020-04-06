@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* Body */
 body {
-	font-family: 'Big Shoulders Text';
+	font-family: Big Shoulders Text, Arial;
 	background-image: url("../images/Saimaa_clutch_taustakuvio.jpg");
 	background-size: auto;
-	font-size: 22px;
 	background-repeat: repeat;
+	font-size: 22px;
 	margin: 0;
 	font-style: normal;
 	font-weight: 200;
@@ -20,7 +20,7 @@ body {
 /* Navigation */
 header {
 	width: 90%;
-	height: 5%;
+	min-height: 30px;
 	background-color: #f79f21;
 	border-bottom: 3px solid #FFFFFF;
 	position: fixed;
@@ -30,14 +30,14 @@ header {
 	color: #fff;
 	text-align: left;
 	width: 50%;
+	height: 100%;
 	letter-spacing: 4px;
-	text-decoration: none;
+	margin: 20px;
 	float: left;
-	margin: 14px 16px;
 }
 nav {
 	text-align: right;
-	margin-right: 25px;
+	margin: auto 0;
 	top: 0;
 }
 nav ul {
@@ -72,8 +72,7 @@ a {
 /* Hero Section */
 .hero {
 	background-color: #0d0d0d;
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding: 150px 0;
 }
 .hero img {
 	width: 90%;
@@ -288,7 +287,7 @@ a {
 .copyright a, .copyright a:visited {
 	text-decoration: none;
 	color: #FFFFFF;
-	font-family: oswald;
+	font-family: oswald, Arial;
 }
 .hidden {
 	display: none;
@@ -396,10 +395,11 @@ nav a {
 	padding: 0;
 }
 }
-
+/* Dark mode testing
 @media screen and (prefers-color-scheme: dark) {
 	.container {
 		background-color: #0d0d0d;
 		color: whitesmoke;
+		border: 2px solid whitesmoke;
 	}
-}
+} */
