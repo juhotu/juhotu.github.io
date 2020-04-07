@@ -262,6 +262,12 @@ strong {
 	color: #C4C4C4;
 	cursor: pointer;
 }
+#spons img {
+	width: 15%;
+	height: auto;
+	padding: 10px;
+	margin: auto 0;
+}
 .copyright {
 	text-align: center;
 	padding-top: 20px;
@@ -350,7 +356,8 @@ strong {
 	.banner {
 		background-color: #f79f21;
 		background-image: none;
-		height: 150px;
+		height: auto;
+		padding: 10px 0;
 	}
 	.parallax {
 		text-align: center;
