@@ -38,8 +38,25 @@
     <link rel="shortcut icon" href="images/Saimaa_clutch_online-thumb.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Big Shoulders Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/clutch.css" rel="stylesheet" type="text/css">
-    <script src = "js/clutch.js"></script>
+    <script>
+        function date() {
+        let dateObj = new Date();
+        let today = dateObj.getUTCDate();
+        let difference = 24;
+        difference = difference - today;
+        document.getElementById("dateDiff").innerHTML = "ENÄÄ " + difference + " PÄIVÄÄ CLUTCHIIN";
+        }
+        function navHandler() {
+            let x = document.getElementById("navUl");
+            if (x.className === "navShown") {
+                x.className = "nav";
+            } else {
+                x.className = "navShown";
+            }
+        }
+    </script>
 </head>
 <body onload="date()">
 <!-- Main Container -->
@@ -48,10 +65,15 @@
       <header>
         <nav>
             <a href="#hero" class="logo" id="dateDiff"></a>
-          <ul>
-            <li><a href="#video">VIDEOT</a></li>
-            <li><a href="#about">INFO</a></li>
-            <li><a href="#some">SOME</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="navHandler()"><i class="fa fa-bars"></i></a>
+          <ul id="navUl" class="nav">
+            <li><a href="#video">Clutch pähkinänkuoressa</a></li>
+            <li><a href="#">Osallistu ja voita</a></li>
+            <li><a href="#">Katsojan opas</a></li>
+            <li><a href="#">Ohjelma ja aikataulu</a></li>
+            <li><a href="#">Kumppanit</a></li>
+            <li><a href="#about">Info</a></li>
+            <li><a href="#some">Yhteystiedot</a></li>
           </ul>
         </nav>
       </header>

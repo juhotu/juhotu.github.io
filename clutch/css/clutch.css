@@ -36,6 +36,9 @@ header {
 	margin: 20px;
 	float: left;
 }
+.icon {
+	display: none;
+}
 nav {
 	text-align: right;
 	margin: auto 0;
@@ -73,7 +76,7 @@ a {
 /* Hero Section */
 .hero {
 	background-color: #0d0d0d;
-	padding: 150px 0;
+	padding: 250px 0 250px;
 }
 .hero img {
 	width: 90%;
@@ -251,17 +254,11 @@ a {
 }
 .button {
 	width: 200px;
-	margin-top: 40px;
-	margin-right: auto;
-	margin-bottom: auto;
-	margin-left: auto;
-	padding-top: 20px;
-	padding-right: 10px;
-	padding-bottom: 20px;
-	padding-left: 10px;
+	margin: 40px auto auto;
+	padding: 20px 10px;
 	text-align: center;
 	vertical-align: middle;
-	border-radius: 0px;
+	border-radius: 0;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -299,102 +296,116 @@ a {
 
 /* Mobile */
 @media (max-width: 777px) {
-header {
-	width: 90%;
-	height: auto;
-	background-color: #f79f21;
-	border-bottom: 3px solid #FFFFFF;
-}
-nav {
-	overflow: hidden;
-}
-nav a {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-}
-.logo {
-	width: auto;
-}
-.hero {
-	margin: 50px 0;
-	padding: 150px 0 50px;
-}
-.thumbnail {
-	width: 100%;
-}
-.info .info_column {
-	width: 100%;
-	margin: 0;
-}
-.info .info_column p {
-	padding: 0 10px;
-}
-.about .text_column {
-	width: 90%;
-	margin: 0;
-}
-.parallax {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	font-size: 18px;
-}
-.parallax_description {
-	padding: 0;
-	width: 90%;
-	margin: 25px 0 0 12px;
-	float: none;
-	text-align: center;
-}
-.cards {
-	padding: 0 10px;
-	width: 80%;
-	height: auto;
-	display: grid;
-	margin: 0 auto;
-}
-.cards iframe {
-	padding: 0;
-	width: 100%;
-	height: 200px;
-	margin: 0 auto;
-	position: page;
-}
-.banner {
-	background-color: #f79f21;
-	background-image: none;
-}
-.tagline {
-	margin-top: 20px;
-	line-height: 22px;
-}
-.hero_header {
-	padding: 0;
-	line-height: 22px;
-	text-align: center;
-}
+	header {
+		width: 90%;
+		height: auto;
+		background-color: #f79f21;
+		border-bottom: 3px solid #FFFFFF;
+	}
+	.icon {
+		display: block;
+		float: right;
+		color: white;
+		height: 100%;
+		margin: auto 0;
+		padding: 10px;
+	}
+	nav {
+		overflow: hidden;
+	}
+	.nav {
+		display: none;
+	}
+	.navShown {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.logo {
+		width: auto;
+	}
+	.hero {
+		margin: 50px 0;
+		padding: 150px 0 50px;
+	}
+	.thumbnail {
+		width: 100%;
+	}
+	.info .info_column {
+		width: 100%;
+		margin: 0;
+	}
+	.info .info_column p {
+		padding: 0 10px;
+	}
+	.about .text_column {
+		width: 90%;
+		margin: 0;
+	}
+	.parallax {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-size: 18px;
+	}
+	.parallax_description {
+		padding: 0;
+		width: 90%;
+		margin: 25px 0 0 12px;
+		float: none;
+		text-align: center;
+	}
+	.cards {
+		padding: 0 10px;
+		width: 80%;
+		height: auto;
+		display: grid;
+		margin: 0 auto;
+	}
+	.cards iframe {
+		padding: 0;
+		width: 100%;
+		height: 200px;
+		margin: 0 auto;
+		position: page;
+	}
+	.banner {
+		background-color: #f79f21;
+		background-image: none;
+	}
+	.tagline {
+		margin-top: 20px;
+		line-height: 22px;
+	}
+	.hero_header {
+		padding: 0;
+		line-height: 22px;
+		text-align: center;
+	}
 }
 
 /* Small Desktops */
 @media (min-width: 778px) and (max-width: 1096px) {
-.info .info_column {
-	width: 100%;
-}
-.thumbnail {
-	width: 50%;
-}
-.about .text_column {
-	width: 90%;
-}
-.banner {
-	margin-top: 0;
-	padding-top: 0;
-}
-.cards {
-	padding: 0;
-}
+	.info .info_column {
+		width: 100%;
+	}
+	.thumbnail {
+		width: 50%;
+	}
+	.about .text_column {
+		width: 90%;
+	}
+	.banner {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.cards {
+		padding: 0;
+	}
 }
 /* Dark mode testing
 @media screen and (prefers-color-scheme: dark) {
