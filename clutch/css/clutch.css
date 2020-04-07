@@ -30,7 +30,7 @@ header {
 .logo {
 	color: #fff;
 	text-align: left;
-	width: 50%;
+	width: auto;
 	height: 100%;
 	letter-spacing: 4px;
 	margin: 20px;
@@ -304,11 +304,10 @@ a {
 	}
 	.icon {
 		display: block;
-		float: right;
 		color: white;
 		height: 100%;
 		margin: auto 0;
-		padding: 10px;
+		padding: 20px;
 	}
 	nav {
 		overflow: hidden;
@@ -317,12 +316,12 @@ a {
 		display: none;
 	}
 	.navShown {
-		display: block;
-		text-align: center;
+		display: inline-block;
+	}
+	.navShown li {
+		text-align: left;
 		text-decoration: none;
-		float: none;
-		width: 100%;
-		margin: 0 auto;
+		width: 80%;
 	}
 	.logo {
 		width: auto;
