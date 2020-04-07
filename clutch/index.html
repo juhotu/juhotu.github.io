@@ -44,17 +44,17 @@
     <div class="container">
           <!-- Navigation -->
           <header>
-            <a href="#hero" class="logo" id="dateDiff" onclick="navHandler()">SAIMAA CLUTCH</a>
+            <a href="index.html#hero" class="logo" id="dateDiff" onclick="navHandler()">SAIMAA CLUTCH</a>
             <a href="javascript:void(0);" class="icon" onclick="navHandler()"><i class="fa fa-bars"></i></a>
             <nav id="navUl" class="nav">
               <ul>
-                <li><a href="#video" onclick="navHandler()">Clutch pähkinänkuoressa</a></li>
+                <li><a href="index.html#video" onclick="navHandler()">Clutch pähkinänkuoressa</a></li>
                 <li><a href="#" onclick="navHandler()">Osallistu ja voita</a></li>
-                <li><a href="#" onclick="navHandler()">Katsojan opas</a></li>
-                <li><a href="#" onclick="navHandler()">Ohjelma ja aikataulu</a></li>
-                <li><a href="#" onclick="navHandler()">Kumppanit</a></li>
-                <li><a href="#about" onclick="navHandler()">Info</a></li>
-                <li><a href="#some" onclick="navHandler()">Yhteystiedot</a></li>
+                <li><a href="content.html" onclick="navHandler()">Katsojan opas - Kanavat ja Pelit</a></li>
+                <li><a href="content.html" onclick="navHandler()">Ohjelma ja aikataulu</a></li>
+                <li><a href="info.html" onclick="navHandler()">Kumppanit</a></li>
+                <li><a href="info.html" onclick="navHandler()">Info</a></li>
+                <li><a href="info.html" onclick="navHandler()">Yhteystiedot</a></li>
               </ul>
             </nav>
           </header>
@@ -155,7 +155,7 @@
             let difference = 24;
             difference = difference - today;
             document.getElementById("dateDiff").innerHTML = "ENÄÄ " + difference + " PÄIVÄÄ CLUTCHIIN";
-        })
+        });
         function navHandler() {
             let x = document.getElementById("navUl");
             if (x.className === "navShown") {

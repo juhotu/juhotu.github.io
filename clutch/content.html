@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fi-FI">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Saimaa Clutch Online tapahtuma järjestetään verkossa 24.4.20 - 26.4.20">
+<meta name="keywords" content="Saimaa, Clutch, Trailblazers, Skynett">
+<title>Saimaa Clutch Online</title>
+<link rel="shortcut icon" href="images/Saimaa_clutch_online-thumb.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="css/clutch.css" rel="stylesheet" type="text/css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155890770-2">
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155890770-2');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '513919315966253');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=513919315966253&ev=PageView&noscript=1" alt=""></noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+    fbq('track', 'ViewContent');
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<!-- Main Container -->
+<div class="container">
+    <!-- Navigation -->
+    <header>
+        <a href="index.html#hero" class="logo" id="dateDiff" onclick="navHandler()">SAIMAA CLUTCH</a>
+        <a href="javascript:void(0);" class="icon" onclick="navHandler()"><i class="fa fa-bars"></i></a>
+        <nav id="navUl" class="nav">
+            <ul>
+                <li><a href="index.html#video" onclick="navHandler()">Clutch pähkinänkuoressa</a></li>
+                <li><a href="#" onclick="navHandler()">Osallistu ja voita</a></li>
+                <li><a href="content.html" onclick="navHandler()">Katsojan opas - Kanavat ja Pelit</a></li>
+                <li><a href="content.html" onclick="navHandler()">Ohjelma ja aikataulu</a></li>
+                <li><a href="info.html" onclick="navHandler()">Kumppanit</a></li>
+                <li><a href="info.html" onclick="navHandler()">Info</a></li>
+                <li><a href="info.html" onclick="navHandler()">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <img src="images/Saimaa_clutch_online_wide2.png" alt="Saimaa Clutch Online">
+        </section>
+        <!-- Some section -->
+        <div class="some" id="some">
+            <p style="text-align: center;">
+                <a href="https://www.facebook.com/events/271671743832382/" target="_blank" rel="noopener"><img src="http://trailblazers.gg/wp-content/uploads/2019/08/facebook-300x300.png" alt="Facebook" width="30" height="30" /></a>
+                <a href="https://www.instagram.com/saimaaclutch/" target="_blank" rel="noopener"><img src="http://trailblazers.gg/wp-content/uploads/2019/08/instagram-300x300.png" alt="Instagram" width="30" height="30" /></a>
+                <a href="https://twitter.com/FI_Trailblazers" target="_blank" rel="noopener"><img src="http://trailblazers.gg/wp-content/uploads/2019/08/twitter-300x300.png" alt="Twitter" width="30" height="30" /></a>
+                <a href="https://www.youtube.com/channel/UCSNIaZwydSK0oIX0zxbpB-w" target="_blank" rel="noopener"><img src="http://trailblazers.gg/wp-content/uploads/2019/08/youtube-300x300.png" alt="Youtube" width="30" height="30" /></a>
+                <a href="https://discord.gg/bwgCG2x"><img src="https://trailblazers.gg/wp-content/uploads/2020/02/ikoni_kotisivut_discord-150x150.png" alt="Discord" width="30" height="30" /></a>
+                <a href="https://twitch.tv/TrailblazersGG"><img src="https://trailblazers.gg/wp-content/uploads/2020/02/ikoni_kotisivut_twitch-150x150.png" alt="Twitch" width="30" height="30" /></a></p>
+        </div>
+        <!-- Copyrights Section -->
+        <div class="copyright"><a href="https://trailblazers.gg">&copy;2020- <strong>Powered by Trailblazers </strong><img src="images/tbz-bw.png" width="20" height="20" alt=""></a></div>
+    </main>
+</div>
+<!-- Main Container Ends -->
+<script>
+    $(document).ready(function() {
+        let dateObj = new Date();
+        let today = dateObj.getUTCDate();
+        let difference = 24;
+        difference = difference - today;
+        document.getElementById("dateDiff").innerHTML = "ENÄÄ " + difference + " PÄIVÄÄ CLUTCHIIN";
+    });
+    function navHandler() {
+        let x = document.getElementById("navUl");
+        if (x.className === "navShown") {
+            x.className = "nav";
+        } else {
+            x.className = "navShown";
+        }
+    }
+</script>
+</html>
