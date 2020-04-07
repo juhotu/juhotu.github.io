@@ -221,6 +221,9 @@ strong {
 	color: #717070;
 	text-align: center;
 }
+.about li {
+	padding: 10px 0;
+}
 .about .text_column h3 {
 	color: #f79f21;
 	text-align: center;
