@@ -347,10 +347,15 @@ strong {
 		width: 90%;
 		margin: 0;
 	}
+	.banner {
+		background-color: #f79f21;
+		background-image: none;
+		height: 150px;
+	}
 	.parallax {
 		text-align: center;
 		margin: 0;
-		padding: 0;
+		padding: 10px 0;
 		width: 100%;
 		font-size: 18px;
 	}
@@ -374,10 +379,6 @@ strong {
 		height: 200px;
 		margin: 0 auto;
 		position: page;
-	}
-	.banner {
-		background-color: #f79f21;
-		background-image: none;
 	}
 }
 
