@@ -244,9 +244,14 @@ strong {
 	font-weight: lighter;
 	margin: 0 20px;
 }
-#spons img {
-	width: 15%;
-	height: auto;
+.main-spons img {
+	height: 130px;
+	width: auto;
+	margin: 10px auto;
+}
+.other-spons img {
+	height: 100px;
+	width: auto;
 	padding: 10px;
 	margin: auto 0;
 }
@@ -369,6 +374,14 @@ strong {
 		margin: 0 auto;
 		position: page;
 	}
+	.main-spons img {
+		width: 90%;
+		height: auto;
+	}
+	.other-spons img {
+		max-height: 80px;
+		height: auto;
+	}
 }
 
 /* Small Desktops */
@@ -406,6 +419,11 @@ strong {
 	}
 	.cards {
 		padding: 0;
+	}
+	.main-spons img {
+		height: 100px;
+		width: auto;
+		margin: 10px auto;
 	}
 }
 
