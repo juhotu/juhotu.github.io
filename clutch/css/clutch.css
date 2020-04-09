@@ -26,6 +26,13 @@ header {
 	top: 0;
 	padding-bottom: 5px;
 }
+.tbz-head img {
+	max-height: 30px;
+	width: auto;
+	height: 5%;
+	float: left;
+	padding: 20px 0 0 20px;
+}
 .logo {
 	color: #fff;
 	text-align: left;
@@ -72,6 +79,15 @@ a {
 strong {
 	font-weight: bold;
 	color: #f79f21;
+}
+h3 {
+	color: #f79f21;
+	text-align: center;
+}
+h2 {
+	font-size: 36px;
+	color: #717070;
+	text-align: center;
 }
 
 /* Hero Section */
@@ -176,10 +192,6 @@ strong {
 	height: 100%;
 	border: 0;
 }
-.info .info_column h3 {
-	color: #f79f21;
-	text-align: center;
-}
 .info .info_column p{
 	color: #717070;
 	background-color: #FFFFFF;
@@ -207,21 +219,8 @@ strong {
 	margin: 0 auto;
 	text-align: center;
 }
-.about h3 {
-	text-align: center;
-	color: #f79f21;
-}
-.about h2 {
-	font-size: 36px;
-	color: #717070;
-	text-align: center;
-}
 .about li {
 	padding: 10px 0;
-}
-.about .text_column h3 {
-	color: #f79f21;
-	text-align: center;
 }
 .about img {
 	width: 90%;
@@ -326,6 +325,9 @@ strong {
 	.thumbnail {
 		width: 100%;
 	}
+	.info {
+		padding: 30px 0;
+	}
 	.info .info_column {
 		width: 100%;
 		margin: 0;
@@ -380,6 +382,7 @@ strong {
 	}
 	.other-spons img {
 		max-height: 80px;
+		max-width: 90%;
 		height: auto;
 	}
 }
@@ -394,8 +397,11 @@ strong {
 	nav a {
 		padding: 0 5px;
 	}
+	.tbz-head img {
+		float: left;
+	}
 	.logo {
-		width: 100%;
+		width: 80%;
 		text-align: center;
 	}
 	.info {
