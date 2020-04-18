@@ -208,10 +208,12 @@ h2 {
 	width: 100%;
 	padding: 40px 0;
 	margin: 30px 0 0;
+	overflow: hidden;
 }
 .grid {
+	width: 100%;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 50% 50%;
 }
 .about p {
 	width: 75%;
@@ -223,9 +225,9 @@ h2 {
 	padding: 10px 0;
 }
 .about img {
+	margin: 30px 5%;
 	width: 90%;
 	height: auto;
-	margin: 30px 5%;
 }
 .text_column {
 	text-align: justify;
