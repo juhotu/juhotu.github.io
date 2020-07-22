@@ -218,7 +218,6 @@ h2 {
     height: auto;
 }
 .text_column {
-    text-align: justify;
     font-weight: lighter;
     line-height: 25px;
     padding: 30px 20px;
@@ -226,17 +225,20 @@ h2 {
     width: 90%;
 }
 .text_column img {
-    max-height: 450px;
+    max-height: 350px;
     width: auto;
 }
-.about .text_column p{
+.text_column p{
     color: #717070;
     background-color: #FFFFFF;
     padding: 0 30px;
     line-height: 25px;
     font-weight: lighter;
     margin: 0 20px;
+    width: 50%;
 }
+.text_column
+
 .main-spons img {
     height: 130px;
     width: auto;
