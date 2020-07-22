@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* Body */
 body {
-    font-family: 'Myriad Pro', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 21px;
     font-weight: 200;
     background-size: auto;
-    background-color: #0056b3;
+    background-color: snow;
     margin: 0;
 }
 /* Container */
@@ -24,21 +24,12 @@ header {
     top: 0;
     padding-bottom: 5px;
 }
-.tbz-head img {
+.logo img {
     max-height: 30px;
     width: auto;
     height: 5%;
     float: left;
     padding: 20px 0 0 20px;
-}
-.logo {
-    color: #fff;
-    text-align: left;
-    width: auto;
-    height: 100%;
-    letter-spacing: 4px;
-    margin: 20px 20px 0;
-    float: left;
 }
 .icon {
     display: none;
@@ -67,6 +58,9 @@ nav ul li a {
 }
 nav ul li:hover a {
     color: black;
+}
+nav .current {
+    background-color: #007bff;
 }
 a {
     color: #f79f21;
