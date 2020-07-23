@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="image/juho.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "js/library.js"></script>
 </head>
 <body>
 
@@ -41,6 +43,19 @@
                 <p>My workexperience is being an Apple service technician at iTronic Lappeenranta for over four years. During that time I have finished my vocal qualification degree and finnish high school and had about 10 months off work which of 6 months I spent in the army. I started my university of applied sciences studies at Fall 2019.</p>
             </div>
         </article>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <p>My artwork</p>
+        <img src="image/bhgsome.png" id="carousel-image">
+        <p id="carousel-title">title</p>
+        <div class="buttons">
+            <button type="button" onclick="showPrevious()"><</button>
+            <button type="button" id="playBut" onclick="play()">PLAY</button>
+            <button type="button" onclick="showNext()">></button>
+        </div>
     </section>
 
     <footer><div class="copyright">&copy; Juho Turkki 2020</div></footer>
