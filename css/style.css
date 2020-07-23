@@ -212,32 +212,33 @@ h2 {
 .about li {
     padding: 10px 0;
 }
-.about img {
-    margin: 30px 5%;
-    width: 90%;
-    height: auto;
-}
 .text_column {
     font-weight: lighter;
     line-height: 25px;
     padding: 30px 20px;
     color: #717070;
     width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 .text_column img {
     max-height: 350px;
     width: auto;
+    margin: 0 30px;
+}
+.text_column .text {
+    justify-content: left;
+    text-align: left;
+    margin: 0;
 }
 .text_column p{
     color: #717070;
     background-color: #FFFFFF;
-    padding: 0 30px;
+    padding: 0 10px;
     line-height: 25px;
     font-weight: lighter;
-    margin: 0 20px;
-    width: 50%;
+    margin: 0 10px;
 }
-.text_column
 
 .main-spons img {
     height: 130px;
