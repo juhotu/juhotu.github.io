@@ -283,6 +283,7 @@ h2 {
     font-weight: lighter;
     letter-spacing: 2px;
     border-top-width: 2px;
+    bottom: 0;
 }
 .copyright a, .copyright a:visited {
     text-decoration: none;
