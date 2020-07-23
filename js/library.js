@@ -1,4 +1,4 @@
-let array = [{"index":0,"name":"SoMe add for Bonehill Gaming","src":"bhgsome.png"},{"index":1,"name":"Poster for TFT league","src":"tftesite.png"}];
+let array = [{"index":0,"name":"Social media ad for Bonehill Gaming","src":"bhgsome.png"},{"index":1,"name":"Poster for TFT league","src":"tftesite.png"}];
 
 let index;
 let playing=false;
