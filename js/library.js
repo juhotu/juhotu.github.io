@@ -16,6 +16,15 @@ function init() {
     update();
 }
 
+function navHandler() {
+    let x = document.getElementById("navUl");
+    if (x.className === "navShown") {
+        x.className = "nav";
+    } else {
+        x.className = "navShown";
+    }
+}
+
 function showPrevious() {
     if (index == 0)
         index = array.length -1;

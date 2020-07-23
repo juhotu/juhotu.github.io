@@ -319,13 +319,22 @@ h2 {
         padding: 20px;
         text-align: right;
     }
-    nav {
+    .nav {
+        display: none;
+    }
+    .navShown {
         display: block;
     }
-    nav li {
-        text-align: left;
+    .navShown ul {
+        margin: 0;
+    }
+    .navShown li {
+        text-align: center;
         text-decoration: none;
         width: 80%;
+    }
+    nav .current li {
+        background-color: #007bff;
     }
     .logo {
         width: auto;
@@ -350,12 +359,16 @@ h2 {
     .info .info_column p {
         padding: 0 10px;
     }
-    .text_column {
+    .about .text_column {
+        width: 100%;
+        margin: 0 auto;
         display: block;
     }
-    .about .text_column {
+    .text_column img {
         width: 90%;
-        margin: 0;
+        height: auto;
+        max-height: none;
+        margin: 0 auto;
     }
     .banner {
         background-color: #0056b3;
