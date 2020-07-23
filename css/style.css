@@ -247,6 +247,7 @@ h2 {
 }
 .gallery img {
     max-height: 500px;
+    max-width: 80%;
     width: auto;
 }
 
@@ -307,13 +308,10 @@ h2 {
         padding: 20px;
         text-align: right;
     }
-    .nav {
-        display: none;
-    }
-    .navShown {
+    nav {
         display: block;
     }
-    .navShown li {
+    nav li {
         text-align: left;
         text-decoration: none;
         width: 80%;
@@ -341,7 +339,7 @@ h2 {
     .info .info_column p {
         padding: 0 10px;
     }
-    .grid {
+    .text_column {
         display: block;
     }
     .about .text_column {
@@ -397,14 +395,11 @@ h2 {
 @media (min-width: 778px) and (max-width: 1096px) {
     nav {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 20px 0;
         float: none;
     }
     nav a {
         padding: 0 5px;
-    }
-    .tbz-head img {
-        float: left;
     }
     .logo {
         width: 80%;
@@ -415,6 +410,7 @@ h2 {
     }
     .about {
         padding: 80px 0 35px;
+        width: 100%;
     }
     .info .info_column {
         width: 100%;
@@ -422,8 +418,11 @@ h2 {
     .thumbnail {
         width: 50%;
     }
-    .about .text_column {
-        width: 90%;
+    .text_column img {
+        margin: 0;
+    }
+    .text_column .text {
+        width: 100%;
     }
     .banner {
         margin-top: 0;
