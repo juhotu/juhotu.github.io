@@ -11,7 +11,7 @@ body {
 /* Container */
 .container {
     width: 90%;
-    margin: 0 auto;
+    margin: 70px auto 0;
     height: 1000px;
 }
 /* Navigation */
