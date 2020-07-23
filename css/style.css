@@ -240,6 +240,16 @@ h2 {
     margin: 0 10px;
 }
 
+/* Gallery Section */
+.gallery {
+    width: 90%;
+    margin: 10px auto;
+}
+.gallery img {
+    max-height: 500px;
+    width: auto;
+}
+
 .main-spons img {
     height: 130px;
     width: auto;

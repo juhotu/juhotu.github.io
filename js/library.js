@@ -1,4 +1,4 @@
-let array = [{"index":0,"name":"SoMe add for Bonehill Gaming","src":"../image/bhgsome.png"},{"index":1,"name":"Poster for TFT league","src":"../image/tftesite.png"}];
+let array = [{"index":0,"name":"SoMe add for Bonehill Gaming","src":"bhgsome.png"},{"index":1,"name":"Poster for TFT league","src":"tftesite.png"}];
 
 let index;
 let playing=false;
@@ -56,7 +56,7 @@ function show() {
 }
 
 function update() {
-    $("#carousel-image").attr("src", "../img/"+array[index].src).fadeIn(1000);
+    $("#carousel-image").attr("src", "image/"+array[index].src).fadeIn(1000);
     $("#carousel-title").html(array[index].name);
     localStorage.setItem("imageIndex", index);
 }
