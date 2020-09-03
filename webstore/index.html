@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coronastore</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico" />
+    <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src = "js/webstore.js" defer></script>
+</head>
+
+<body>
+    <!-- Site header -->
+    <header>
+        <img src="img/berries-hero.jpg.png" alt="Coronastore"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="cart">Cart <i class="fa fa-shopping-cart"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart div -->
+    <div class="dialog" id="shopping-cart"></div>
+    <!-- Site description -->
+    <div class="content">
+        <div class="description">
+            <h1>Best of the best berries!</h1>
+            <p>Our berries are top of the quality when it comes to naturality, freshness and taste. Handpicked berries are shipped throughout the country on cold packs so you know they will be just like picked on arrival.</p>
+        </div>
+        <!-- Search by color -->
+        <aside>
+            <h2>Choose by color</h2>
+            <ul>
+                <li><button onclick="PrintProducts(1)">Red</button></li>
+                <li><button onclick="PrintProducts(2)">Blue</button></li>
+                <li><button onclick="PrintProducts(3)">Black</button></li>
+                <li><button onclick="PrintProducts(0)">Show all</button></li>
+            </ul>
+        </aside>
+        <!-- Products ( list comes from js) -->
+        <section id="productlist">
+            Loading products
+        </section>
+    </div>
+    <!-- Site footer -->
+    <footer>&copy; Coronastore 2020</footer>
+</body>
+</html>

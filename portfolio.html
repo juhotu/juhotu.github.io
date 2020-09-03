@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Juho Turkki</title>
+    <link rel="shortcut icon" href="image/juho.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src = "js/library.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <a href="index.html" class="logo"><img src="image/juho.png" alt="Juho"></a>
+        <a href="javascript:void(0);" class="icon" onclick="navHandler()"><i class="fa fa-bars"></i></a>
+        <nav id="navUl" class="nav">
+            <ul>
+                <li><a href="index.html" onclick="navHandler()">Home</a></li>
+                <li class="current"><a href="portfolio.html" onclick="navHandler()">Portfolio</a></li>
+                <li><a href="life.html" onclick="navHandler()">Life</a></li>
+                <li><a href="about.html" onclick="navHandler()">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>Showcase for some of my work!</h2>
+        <p>Collage of my past projects and doings</p>
+        <article class="text_column">
+            <img src="image/prof-1.jpg" alt=""/>
+            <div class="text">
+                <h3>Study and interest</h3>
+                <p>I have a vocal qualification in Business IT degree and I am currently studying Business Administration with major in IT at LAB University of applied sciences. I have studied languages such as Finnish, English, Swedish, HTML5, CSS, JavaScript, PHP, C#. I also have experience with MySQL, Access, Windows and Linux server, WordPress and obviously many hours on various Office365 applications. C# has been the most interesting to work with by far I think and I am a bit interested to try Swift and overally programming for Mac or iOS as those are the platforms I mostly enjoy using.</p>
+            </div>
+        </article>
+        <!-- Stats Gallery Section -->
+        <div class="gallery">
+            <h2>Past projects</h2>
+            <div class="thumbnail">
+                <h1 class="stats">Coronastore</h1>
+                <h4><a href="webstore/index.html" target="_blank">Final task for web technologies course</a></h4>
+                <p>Goal was to produce a sort of working webstore with simple functions and no back-end.</p>
+            </div>
+            <div class="thumbnail">
+                <h1 class="stats">Saimaa Clutch Online</h1>
+                <h4><a href="clutch/index.html" target="_blank">Web project on event producer course</a></h4>
+                <p>This was designed to be a template site so we could start advertasing the event before the final site was put together. On a final site I worked as a content coordinator.</p>
+            </div>
+            <div class="thumbnail">
+                <h1 class="stats">Bank</h1>
+                <h4><a href="https://github.com/JuhoTu/db-course/tree/master/BankApp" target="_blank">Final task for database course</a></h4>
+                <p>SSMS was used as a server for database. The bank app was a console application (C#) with what you could do basic CRUD actions with banks, users, accounts and transactions.</p>
+            </div>
+            <div class="thumbnail">
+                <h1 class="stats">Reference number</h1>
+                <h4><a href="https://github.com/JuhoTu/harjoitukset/tree/master/ReferenceNumber" target="_blank">Final task for programming basics</a></h4>
+                <p>Creates and checks reference numbers.</p>
+            </div>
+        </div>
+        <article class="text_column">
+            <img src="image/prof-2.jpg" alt=""/>
+            <div class="text">
+                <h3>Work history</h3>
+                <p>My workexperience is being an Apple service technician at iTronic Lappeenranta for over four years. During that time I have finished my vocal qualification degree and finnish high school and had about 10 months off work which of 6 months I spent in the army. I started my university of applied sciences studies at Fall 2019.</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <p>My artwork</p>
+        <img src="image/bhgsome.png" id="carousel-image">
+        <p id="carousel-title">title</p>
+        <div class="buttons">
+            <button type="button" onclick="showPrevious()"><</button>
+            <button type="button" id="playBut" onclick="play()">PLAY</button>
+            <button type="button" onclick="showNext()">></button>
+        </div>
+    </section>
+
+    <footer><div class="copyright">&copy; Juho Turkki 2020</div></footer>
+
+</div>
+
+</body>
+
+</html>
