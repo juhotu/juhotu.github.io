@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+        let array = [{"index":0,"name":"Trailblazers","src":"https://player.twitch.tv/?channel=trailblazersgg&parent=localhost"},{"index":1,"name":"Myst1s","src":"https://player.twitch.tv/?channel=myst1s&parent=localhost"},{"index":2,"name":"ESML","src":"https://player.twitch.tv/?channel=esmliiga&parent=localhost"}];
+
+        let index;
+        let carousel;
+
+        $(function () {
+            init();
+        });
+
+        function init() {
+            if (localStorage.getItem("imageIndex") != null)
+                index = localStorage.getItem("imageIndex");
+            else
+                index = 0;
+            update();
+        }
+
+        function tbz() {
+            index = 0;
+            $("#stream").fadeOut(1000, update);
+        }
+
+        function mysse() {
+            index = 1;
+            $("#stream").fadeOut(1000, update);
+        }
+
+        function esml() {
+            index = 2;
+            $("#stream").fadeOut(1000, update);
+        }
+
+
+        function update() {
+            $("#stream").attr("src", array[index].src).fadeIn(1000);
+            $("#stream").html(array[index].name);
+            localStorage.setItem("imageIndex", index);
+        }
+    </script>
+</head>
+<body>
+<iframe src="https://player.twitch.tv/?channel=esmliiga&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" id="stream"></iframe>
+<button onclick="tbz()">Trailblazers</button>
+<button onclick="mysse()">Myst1s</button>
+<button onclick="esml()">ESML</button>
+</body>
+</html>
