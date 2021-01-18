@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63a33637-cf70-4d7a-98f0-dbf331a479ca" name="Default Changelist" comment="" />
+    <list default="true" id="63a33637-cf70-4d7a-98f0-dbf331a479ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/life.html" beforeDir="false" afterPath="$PROJECT_DIR$/life.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,10 +48,21 @@
       <workItem from="1599146659441" duration="2292000" />
       <workItem from="1603792324899" duration="45000" />
       <workItem from="1603792392874" duration="263000" />
+      <workItem from="1611005391789" duration="1321000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1221" y="342" key="SettingsEditor" timestamp="1611006720278">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1221" y="342" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1611006720278" />
+    <state x="1383" y="419" width="672" height="678" key="search.everywhere.popup" timestamp="1611005664830">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1383" y="419" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1611005664830" />
   </component>
 </project>
